@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",
+    "jsx": "react",
+
+    "module": "commonjs",
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    },
+
+    "declaration": false,
+    "sourceMap": false,
+    "outDir": "dist", 
+    "removeComments": true,
+
+    "esModuleInterop": true,
+    "forceConsistentCasingInFileNames": true,
+
+    "strict": true,
+   
+    // "skipDefaultLibCheck": true,
+    "skipLibCheck": true
+  },
+  "include": [
+    "**/*.ts",
+    "**/*.tsx",
+    "typings/*.d.ts",
+  ]
+}
