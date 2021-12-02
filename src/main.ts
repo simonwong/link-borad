@@ -11,7 +11,11 @@ function createWindow() {
     },
   })
 
-  win.loadFile(path.join(__dirname, 'index.html'))
+  if (process.env.NODE_ENV === 'development') {
+    win.loadURL('http://localhost:8080/index.html')
+  } else {
+    win.loadFile('index.html')
+  }
 
   // 从 nativeTheme 中获取主题颜色
   // 使用 IPC 通道提供主题切换和重置

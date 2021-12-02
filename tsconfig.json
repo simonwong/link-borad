@@ -23,6 +23,7 @@
     "skipLibCheck": true
   },
   "include": [
+    "**/*.js",
     "**/*.ts",
     "**/*.tsx",
     "typings/*.d.ts",

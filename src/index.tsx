@@ -11,7 +11,6 @@ const App = () => {
       <p>
         Current theme source: <strong id="theme-source">{themeSource}</strong>
       </p>
-
       <button
         type="button"
         id="toggle-dark-mode"
